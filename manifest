@@ -1,0 +1,7 @@
+title=SDKPanel
+subtitle=SDK Video Panel for premium app
+major_version=1
+minor_version=1
+build_version=00001
+sg_component_libs_provided=SDKPanel
+hidden=1
