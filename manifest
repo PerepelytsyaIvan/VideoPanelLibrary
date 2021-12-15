@@ -5,3 +5,4 @@ minor_version=1
 build_version=00001
 sg_component_libs_provided=SDKPanel
 hidden=1
+bs_const=LOG_REQUEST_ENABLED=true

@@ -1,0 +1,18 @@
+<component name="Panel" extends="Group" initialFocus = "videoPlayer">
+    <script type="text/brightscript" uri="./Panel.brs" />
+
+    <interface>
+        <field id="backgroundUri" type="string" alias="backgroundPanel.uri"/>
+        <field id="widthPanel" type="float"  alias="backgroundPanel.width" onChange = "layoutSubviews"/>
+        <field id="heightPanel" type="float" alias="backgroundPanel.height" onChange = "layoutSubviews"/>
+        <field id="videoPlayer" type="node" onChange="configurePanel"/>
+    </interface>
+
+    <children>
+        <Group id = "panel" visible="false">
+            <Poster id = "backgroundPanel" />
+            <Label id = "questionLabel" wrap = "true" horizAlign = "center" text = "label" vertAlign = "center" color="#ffffff" numLines = "2"/>
+            <LayoutGroup id="panelButtons" layoutDirection="horiz" vertAlignment="center" vertAlign = "center" itemSpacings="[60]"/>                
+        </Group>
+    </children>
+</component>
